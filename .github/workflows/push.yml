@@ -9,7 +9,7 @@ jobs:
     # On declare les taches que notre processus va executer
     steps:
       - name: je fais des tests
-        uses: echo "Je fais des tests"
+        run: echo "Je fais des tests"
  
 
 
