@@ -1,0 +1,19 @@
+name: open_pull_request
+
+# On indique à Github quand le déclencher :
+# Est ce qu'on le declenche au :
+# push
+# Pull request
+# merge
+# push sur la branch untel
+on: pull_request
+
+# On declare des processus de travail
+jobs: 
+  # On donne un nom à notre job
+  Tests: 
+    runs-on: ubuntu-latest
+    # On declare les taches que notre processus va executer
+    steps:
+      - name: pull_request
+        run: echo "je fais des tests ensuite un build"
