@@ -6,7 +6,8 @@ name: Mon_1er_Test
 # Pull request
 # merge
 # push sur la branch untel
-on: pull_request
+on: push
+
 # On declare des processus de travail
 jobs: 
   # On donne un nom à notre job
