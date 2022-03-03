@@ -14,15 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     # On declare les taches que notre processus va executer
     steps:
-      - name: recuperation du répo
-        uses: actions/checkout@v3
       - name: "faire des tests"
         run: echo "Je fais des tests"
-  Build:
-    needs: Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: recuperation du répo
-        uses: actions/checkout@v3
-      - name: "Lister le contenu du dossier de mon step"
-        run: echo "Je fais des Builds"
