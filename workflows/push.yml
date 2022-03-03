@@ -1,0 +1,17 @@
+name: WorkFlow_Push
+
+on: push 
+
+jobs: 
+  # On donne un nom à notre job
+  Tests: 
+    runs-on: ubuntu-latest
+    # On declare les taches que notre processus va executer
+    steps:
+      - name: je fais un push
+        uses: echo "Je fais un push"
+ 
+
+
+
+
