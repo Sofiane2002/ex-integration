@@ -16,4 +16,4 @@ jobs:
     # On declare les taches que notre processus va executer
     steps:
       - name: pull_request
-        run: echo "je fais des tests ensuite un build"
+        run: echo "je fai s des tests ensuite un build"
