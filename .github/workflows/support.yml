@@ -1,0 +1,36 @@
+name: workflow_support
+
+# On indique à Github quand le déclencher :
+# Est ce qu'on le declenche au :
+# push
+# Pull request
+# merge
+# push sur la branch untel
+on:
+  push:
+    branches:
+      - support
+
+# On declare des processus de travail
+jobs: 
+  # On donne un nom à notre job
+  Tests: 
+    runs-on: ubuntu-latest
+    # On declare les taches que notre processus va executer
+    steps:
+      - name: recuperation du répo
+        uses: actions/checkout@v3
+      - name: "faire des tests"
+        run: echo "Je fais des tests"
+      - name: je fais test mon support
+        run: echo "je test le support"
+  Build:
+    needs: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: recuperation du répo
+        uses: actions/checkout@v3
+      - name: "Lister le contenu du dossier de mon step"
+        run: echo "Je fais des Builds"
+      - name: je fais crée mon support
+        run: echo "je crée le support"
