@@ -6,7 +6,10 @@ name: open_pull_request
 # Pull request
 # merge
 # push sur la branch untel
-on: pull_request
+on: 
+  pull_request: 
+    types:
+      - closed
 
 # On declare des processus de travail
 jobs: 
