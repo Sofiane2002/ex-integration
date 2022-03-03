@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     # On declare les taches que notre processus va executer
     steps:
-      - name: je fais un push
-        uses: echo "Je fais un push"
+      - name: je fais des tests
+        uses: echo "Je fais des tests"
  
 
 
